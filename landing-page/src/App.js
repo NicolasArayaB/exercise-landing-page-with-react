@@ -23,11 +23,10 @@ const MyJumbotron = () => {
     return(
     <Col>
         <Jumbotron sm={12}>
-            <h1>A Warm Welcome</h1>
+            <h1>Welcome to my landing page</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id risus finibus, pellentesque risus sit amet, 
-              placerat velit. Donec sem orci, luctus sed sodales et, feugiat non magna. Fusce venenatis, tortor non facilisis sollicitudin, 
-              tellus nulla auctor neque, sit amet tincidunt lorem lectus ac augue.
+                In this excercise, I'm using for the first time React. I also implemented React Bootstrap and Bootstrap to make this landing page.
+                There is so much to learn of this awesome framework, but it makes so much easier with this additional tools.
             </p>
             <p>
               <Button variant="primary">Call to action!</Button>
@@ -44,8 +43,7 @@ const MyCard = (props) => {
                 <Card.Body>
                     <Card.Title>{props.title}</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        In this picture you can see a random {props.text} 
                     </Card.Text>
                     <hr style= {{width: "100%" }} />
                     <Button variant="primary">Find out more!</Button>
@@ -79,10 +77,10 @@ function App() {
                     <MyJumbotron />
                 </Row>
                 <Row>
-                    <MyCard img="https://placeimg.com/640/480/arch" title="Architecture" />
-                    <MyCard img="https://placeimg.com/640/480/nature" title="Nature" />
-                    <MyCard img="https://placeimg.com/640/480/animals" title="Animals" />
-                    <MyCard img="https://placeimg.com/640/480/people" title="People" />
+                    <MyCard img="https://placeimg.com/640/480/arch" title="Architecture" text="building. Sometimes I lose notion of time looking at them, some of them are really pieces of art" />
+                    <MyCard img="https://placeimg.com/640/480/nature" title="Nature" text="scenary. Saddly, everyday hundreds of miles of this beautifull landscapes are being destroyed." />
+                    <MyCard img="https://placeimg.com/640/480/animals" title="Animals" text="animal. It's amazing how they can give you such joy, just be looking at them, even in a picture" />
+                    <MyCard img="https://placeimg.com/640/480/people" title="People" text="person. We have the responsability of take care of our world, but also, of having fun doing it." />
                 </Row>
             </Container>
             <Footer />
